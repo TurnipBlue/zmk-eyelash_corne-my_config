@@ -5,6 +5,7 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -84,10 +85,10 @@
         FUNCTION_3 {
             display-name = "FUNCTION";
             bindings = <
-&rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &none            &none            &none                           &out OUT_USB                     &none         &out OUT_BLE    &none          &none          &none          &bt BT_PRV     &bt BT_NXT
-&rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_TOG                 &rgb_ug RGB_ON            &none  &none  &none  &bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
-&rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_OFF  &none           &none         &bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
-                                                   &none            &to 0                           &none                                          &none           &none          &none
+&rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &none            &none            &none            &out OUT_USB                       &none         &out OUT_BLE    &none          &none          &none          &bt BT_PRV     &bt BT_NXT
+&rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_ON   &ext_power EP_ON            &none  &none  &none  &bt BT_CLR      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
+&rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_OFF  &ext_power EP_OFF  &none           &none         &bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
+                                                   &none            &to 0            &none                                            &none           &none          &none
             >;
         };
     };
