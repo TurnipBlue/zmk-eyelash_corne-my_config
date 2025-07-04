@@ -165,8 +165,8 @@ layers:
   - RGB SAI
   - RGB BRI
   - RGB SPI
-  - RGB TOG
   - RGB ON
+  - EP ON
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -180,8 +180,8 @@ layers:
   - RGB SAD
   - RGB BRD
   - RGB SPD
-  - RGB COLOR HSB(0,0,100)
   - RGB OFF
+  - EP OFF
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - BT CLR ALL
